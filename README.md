@@ -35,8 +35,8 @@ Ejemplo:
 
 ## barrios.geojson
 
-Límites de barrios de Montevideo. 
-
+Límites de barrios de Montevideo.  
+![Imgur](http://i.imgur.com/dsb3aCD.png?)  
 Licencia: Uruguay Open Data Licence  
 Fuente: [Catalogo Datos](https://catalogodatos.gub.uy/dataset/limites-barrios)   
 Ejemplo:  
