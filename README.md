@@ -3,14 +3,14 @@
 
 Utilizando principalmente el [catálogo de datos abiertos](https://catalogodatos.gub.uy/) se descargan, convierten, procesan, limpian para generar los archivos listados.
 
-## direcciones.geojson
+## direcciones.geojson y direcciones_por_barrio
 
-Listado de direcciones de Montevideo.  
+Listado de direcciones de Montevideo.
 
-Licencia: Uruguay Open Data Licence  
-Fuente: [Catalogo Datos](https://catalogodatos.gub.uy/dataset/direcciones-oficiales-de-montevideo)   
-Ejemplo:  
-```
+- Licencia: Uruguay Open Data Licence
+- Fuente: [Catalogo Datos](https://catalogodatos.gub.uy/dataset/direcciones-oficiales-de-montevideo)
+- Ejemplo:
+```json
 {
   "type": "Feature",
   "properties": {
@@ -35,12 +35,13 @@ Ejemplo:
 
 ## barrios.geojson
 
-Límites de barrios de Montevideo.  
-![Imgur](http://i.imgur.com/dsb3aCD.png?)  
-Licencia: Uruguay Open Data Licence  
-Fuente: [Catalogo Datos](https://catalogodatos.gub.uy/dataset/limites-barrios)   
-Ejemplo:  
-```
+Límites de barrios de Montevideo.
+![Imgur](http://i.imgur.com/dsb3aCD.png?)
+
+- Licencia: Uruguay Open Data Licence
+- Fuente: [Catalogo Datos](https://catalogodatos.gub.uy/dataset/limites-barrios)
+- Ejemplo:
+```json
 {
   "type": "Feature",
   "properties": {
@@ -74,4 +75,47 @@ Ejemplo:
   }
 }
 
+```
+
+
+## multas/multas20**.geojson.gz
+
+Multas por año con detalles.
+
+- Licencia: Uruguay Open Data Licence
+- Fuente: [Catalogo Datos](https://catalogodatos.gub.uy/dataset/multas-transito)
+- Ejemplo:
+
+```json
+{
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -56.200111,
+            -34.908392
+        ]
+    },
+    "type": "Feature",
+    "properties": {
+        "vehicle_type": "SEDAN 2 PUERTAS",
+        "ordinance": {
+            "ur_amount": 15,
+            "article": 140,
+            "paragraph": "1A",
+            "id": 1,
+            "description": "CONDUCE CON UNA CONCENTRACION DE ALCOHOL EN SANGRE SUPERIOR A LA PERMITIDA MEDIDA MEDIANTE AIRE ESPIRADO, O NEGARSE A REALIZAR LA PRUEBA (D.677)"
+        },
+        "street_name": "LINIERS",
+        "street_id": 3954,
+        "date": "2010-12-31T17:30:00-03:00",
+        "intersection": {
+            "secondary_street_id": 5886,
+            "secondary_street_name": "RECONQUISTA"
+        },
+        "neighbourhood": {
+            "name": "CIUDAD VIEJA",
+            "id": 1
+        }
+    }
+}
 ```
